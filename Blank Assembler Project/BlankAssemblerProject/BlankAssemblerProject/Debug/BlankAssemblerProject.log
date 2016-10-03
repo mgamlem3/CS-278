@@ -1,0 +1,3 @@
+﻿  Assembling Blank.asm...
+Blank.asm(1): error A2088: END directive required at end of file
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations\masm.targets(50,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\Blank.obj" /Fl"BlankAssemblerProject.lst" /I "C:\Irvine" /W3 /errorReport:prompt  /TaBlank.asm" exited with code 1.
