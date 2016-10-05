@@ -1,0 +1,109 @@
+Microsoft (R) Macro Assembler Version 14.00.24210.0	    10/04/16 16:08:28
+DaysOfWeek.asm						     Page 1 - 1
+
+
+				;AddTwo.asm
+				;EX04_09
+
+				.386
+				.model flat, stdcall
+				.stack 4096
+				ExitProcess PROTO, dwExitCode:DWORD
+ 00000000			.code
+ 00000000			main PROC
+
+ = "This is the first texte		first TEXTEQU <"This is the first textequ">
+   qu"
+ = "This is the second text		second TEXTEQU <"This is the second textequ">
+   equ"
+ = "This is the third texte		third TEXTEQU <"This is the third textequ">
+   qu"
+ = "This is the fouth texte		fourth TEXTEQU <"This is the fouth textequ">
+   qu"
+ = "This is the fifth and f		fifth TEXTEQU <"This is the fifth and final textequ">
+   inal textequ"
+
+ 00000000 54 68 69 73 20		prompt1 BYTE first
+	   69 73 20 74 68
+	   65 20 66 69 72
+	   73 74 20 74 65
+	   78 74 65 71 75
+ 00000019 54 68 69 73 20		prompt2 BYTE second
+	   69 73 20 74 68
+	   65 20 73 65 63
+	   6F 6E 64 20 74
+	   65 78 74 65 71
+	   75
+ 00000033 54 68 69 73 20		prompt3 BYTE third
+	   69 73 20 74 68
+	   65 20 74 68 69
+	   72 64 20 74 65
+	   78 74 65 71 75
+ 0000004C 54 68 69 73 20		prompt4 BYTE fourth
+	   69 73 20 74 68
+	   65 20 66 6F 75
+	   74 68 20 74 65
+	   78 74 65 71 75
+ 00000065 54 68 69 73 20		prompt5 BYTE fifth
+	   69 73 20 74 68
+	   65 20 66 69 66
+	   74 68 20 61 6E
+	   64 20 66 69 6E
+	   61 6C 20 74 65
+	   78 74 65 71 75
+
+					INVOKE ExitProcess,0
+ 00000088  6A 00	   *	    push   +000000000h
+ 0000008A  E8 00000000 E   *	    call   ExitProcess
+ 0000008F			main ENDP
+				END main 
+Microsoft (R) Macro Assembler Version 14.00.24210.0	    10/04/16 16:08:28
+DaysOfWeek.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 DWord	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000008F DWord	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000008F Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+fifth  . . . . . . . . . . . . .	Text   	 "This is the fifth and final textequ"
+first  . . . . . . . . . . . . .	Text   	 "This is the first textequ"
+fourth . . . . . . . . . . . . .	Text   	 "This is the fouth textequ"
+prompt1  . . . . . . . . . . . .	Byte	 00000000 _TEXT	
+prompt2  . . . . . . . . . . . .	Byte	 00000019 _TEXT	
+prompt3  . . . . . . . . . . . .	Byte	 00000033 _TEXT	
+prompt4  . . . . . . . . . . . .	Byte	 0000004C _TEXT	
+prompt5  . . . . . . . . . . . .	Byte	 00000065 _TEXT	
+second . . . . . . . . . . . . .	Text   	 "This is the second textequ"
+third  . . . . . . . . . . . . .	Text   	 "This is the third textequ"
+
+	   0 Warnings
+	   0 Errors
