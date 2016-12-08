@@ -1,0 +1,7 @@
+﻿  Assembling Source3.asm...
+Source3.asm(9): error A2008: syntax error : ebx
+Source3.asm(10): error A2008: syntax error : end
+Source3.asm(11): error A2008: syntax error : ecx
+Source3.asm(12): error A2008: syntax error : end
+Source3.asm(19): fatal error A1010: unmatched block nesting : main3
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations\masm.targets(50,5): error MSB3721: The command "ml.exe /c /nologo /Sg /WX /Zi /Fo"Debug\Source3.obj" /Fl"Project.lst" /I "c:\Irvine" /W3 /errorReport:prompt  /TaSource3.asm" exited with code 1.

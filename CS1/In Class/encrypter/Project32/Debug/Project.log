@@ -1,0 +1,3 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Project.vcxproj -> \\cs1\2019\mgamlem19\CS278-1\In Class\encrypter\Project32\Debug\Weak Encryption Example.exe
+  Project.vcxproj -> \\cs1\2019\mgamlem19\CS278-1\In Class\encrypter\Project32\Debug\Weak Encryption Example.pdb (Full PDB)
